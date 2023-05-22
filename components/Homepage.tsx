@@ -49,7 +49,7 @@ const Homepage=()=> {
               What is PitchTube?
             </p>
             <p className="text-xs sm:text-sm text-center sm:text-start z-20">
-              Hatchery Dao is an NFT gated startup incubator platform to promote
+             PitchTube is an NFT gated startup incubator platform to promote
               startups and help them raise funding. It is also a DataExchange
               platform to buy and sell critical data like balance sheets,
               ledgers, profit statements <b>PRIOR FROM GENERAL PUBLIC</b>.
