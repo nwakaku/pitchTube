@@ -21,29 +21,32 @@ const Homepage=()=> {
     <>
       <section className="bg-[#100a25] min-h-screen font-mono w-full text-white flex items-center justify-center flex-col overflow-hidden">
         <div className="flex flex-col items-center justify-center sm:mt-16 mt-12 w-full">
-          <p className="font-jose text-xs sm:text-base">Welcome to the</p>
-          <p className="font-vt sm:text-9xl text-7xl text-[#ff9e00]">
-            HatcheryDAO
+          <p className="font-serif text-base sm:text-lg text-gray-500">
+            Welcome to
           </p>
-          <p className="font-jose text-xs sm:text-base">
-            The one stop shop for Investors and Startups
+          <h1 className="font-serif text-5xl sm:text-6xl text-[#ff9e00] tracking-wider leading-tight">
+            PitchTube
+          </h1>
+          <p className="font-serif text-base sm:text-lg text-gray-500">
+            The One-Stop Shop for Investors and Startups
           </p>
-          <img src="/img/arr1.png" alt="img" className="ml-56 sm:w-32 w-28" />
+          <img
+            src="/img/arr1.png"
+            alt="arrow"
+            className="mt-8 sm:mt-12 w-24 sm:w-32"
+          />
           <Link
             href="/BuyNFT"
-            className="z-30 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all border-dashed border-2 border-white rounded-3xl hover:bg-white group"
+            className="mt-8 sm:mt-12 bg-[#ff9e00] text-white px-8 py-4 rounded-full hover:bg-white hover:text-[#ff9e00] transition-all duration-300 ease-in-out font-bold text-lg shadow-lg"
           >
-            <span className="z-30 w-48 h-48 rounded-full rotate-[-40deg] bg-[#ff9e00] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
-            <span className="z-30 relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-black font-bold font-vt text-3xl">
-              Buy NFT
-            </span>
+            Buy NFT
           </Link>
         </div>
 
         <div className="w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
           <div className="sm:w-2/6 sm:mr-auto sm:ml-8 w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4">
             <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10">
-              What is HatcheryDao?
+              What is PitchTube?
             </p>
             <p className="text-xs sm:text-sm text-center sm:text-start z-20">
               Hatchery Dao is an NFT gated startup incubator platform to promote
@@ -106,7 +109,7 @@ const Homepage=()=> {
 
       <section className=" rounded-xl flex flex-col items-center justify-center w-full min-h-screen sm:p-14 p-8">
         <p className="sm:text-4xl text-2xl text-center font-semibold my-12">
-          Reasons why you should Buy HatcheryDAO SBT ?
+          Reasons why you should Buy PitchTube SBT ?
         </p>
         <div className="grid sm:w-9/12 w-4/5 sm:grid-cols-3 grid-cols-2 items-center gap-5 bg-[#9d4edd] p-6 text-black rounded-3xl">
           <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
@@ -117,7 +120,7 @@ const Homepage=()=> {
             />
             <p className="text-lg mb-3"> Identify the A-Player earlier</p>
             <p className="text-xs ">
-              With the help of HatcheryDao SBTs you will be eligible to
+              With the help of PitchTube SBTs you will be eligible to
               participate in the DataExchange platform. It is a type of DataDao
               to buy and sell the critical data like balance sheet , ledger ,
               profit statement etc.
@@ -131,7 +134,7 @@ const Homepage=()=> {
             />
             <p className="text-lg mb-3"> Invest as minimum as you want</p>
             <p className="text-xs ">
-              With the help of HatcheryDao Investor SBT you can invest as small
+              With the help of PitchTube Investor SBT you can invest as small
               as 0.1$ , It must be greater than zero atleast , unless its no
               point to invest.
             </p>
@@ -257,7 +260,7 @@ const Homepage=()=> {
       <footer>
         <div className="bg-[#04040f] text-white grid grid-cols-2 w-full">
           <div className="flex flex-col items-start p-4 justify-start">
-            <p className="text-xl">HatcheryDAO</p>
+            <p className="text-xl">PitchTube</p>
             <p className="text-sm">
               A One stop shop for STARTUPS and INVESTORS
             </p>
@@ -298,7 +301,7 @@ const Homepage=()=> {
             </div>
           </div>
           <span className=" py-2 my-auto  text-[#c7c7c7] text-xs">
-            ©2023 HatcheryDAO. ALL COPYRIGHTS RESERVED
+            ©2023 PitchTube. ALL COPYRIGHTS RESERVED
           </span>
         </div>
       </footer>
