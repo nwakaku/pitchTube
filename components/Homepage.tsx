@@ -19,49 +19,50 @@ const Homepage=()=> {
    }, []);
   return (
     <>
-      <section className="bg-[#100a25] min-h-screen font-mono w-full text-white flex items-center justify-center flex-col overflow-hidden">
-        <div className="flex flex-col items-center justify-center sm:mt-16 mt-12 w-full">
-          <p className="font-serif text-base sm:text-lg text-gray-500">
-            Welcome to
-          </p>
-          <h1 className="font-serif text-5xl sm:text-6xl text-[#ff9e00] tracking-wider leading-tight">
-            PitchTube
-          </h1>
-          <p className="font-serif text-base sm:text-lg text-gray-500">
-            The One-Stop Shop for Investors and Startups
-          </p>
-          <img
-            src="/img/arr1.png"
-            alt="arrow"
-            className="mt-8 sm:mt-12 w-24 sm:w-32"
-          />
-          <Link
-            href="/BuyNFT"
-            className="mt-8 sm:mt-12 bg-[#ff9e00] text-white px-8 py-4 rounded-full hover:bg-white hover:text-[#ff9e00] transition-all duration-300 ease-in-out font-bold text-lg shadow-lg"
-          >
-            Buy NFT
-          </Link>
-        </div>
+      <section className="bg-blue-500 text-white min-h-screen font-mono w-full flex items-center justify-center flex-col overflow-hidden">
+  <div className="flex flex-col items-center justify-center sm:mt-16 mt-12 w-full">
+    <p className="font-serif text-base sm:text-lg text-black">
+      Welcome to
+    </p>
+    <h1 className="font-serif text-5xl sm:text-6xl text-gray-200 tracking-wider leading-tight">
+      PitchTube
+    </h1>
+    <p className="font-serif text-base sm:text-lg text-black">
+      The One-Stop Shop for Investors and Startups
+    </p>
+    <img
+      src="/img/arr1.png"
+      alt="arrow"
+      className="mt-8 sm:mt-12 w-24 sm:w-32"
+    />
+    <Link
+      href="/BuyNFT"
+      className="mt-8 sm:mt-12 bg-gray-200 text-black px-8 py-4 rounded-full hover:bg-white hover:text-gray-200 transition-all duration-300 ease-in-out font-bold text-lg shadow-lg"
+    >
+      Buy NFT
+    </Link>
+  </div>
 
-        <div className="w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
-          <div className="sm:w-2/6 sm:mr-auto sm:ml-8 w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4">
-            <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10">
-              What is PitchTube?
-            </p>
-            <p className="text-xs sm:text-sm text-center sm:text-start z-20">
-             PitchTube is an NFT gated startup incubator platform to promote
-              startups and help them raise funding. It is also a DataExchange
-              platform to buy and sell critical data like balance sheets,
-              ledgers, profit statements <b>PRIOR FROM GENERAL PUBLIC</b>.
-            </p>
-          </div>
-          <img
-            src="/img/earth.png"
-            alt="img"
-            className="absolute z-10 w-9/12 sm:-top-48 sm:-right-64 -bottom-72 -right-32 animate-rotate"
-          />
-        </div>
-      </section>
+  <div className="w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
+    <div className="sm:w-2/6 sm:mr-auto sm:ml-8 w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4">
+      <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10">
+        What is PitchTube?
+      </p>
+      <p className="text-xs sm:text-sm text-center sm:text-start z-20">
+        PitchTube is an NFT gated startup incubator platform to promote
+        startups and help them raise funding. It is also a DataExchange
+        platform to buy and sell critical data like balance sheets,
+        ledgers, profit statements <b>PRIOR FROM GENERAL PUBLIC</b>.
+      </p>
+    </div>
+    <img
+      src="/img/earth.png"
+      alt="img"
+      className="absolute z-10 w-9/12 sm:-top-48 sm:-right-64 -bottom-72 -right-32 animate-rotate"
+    />
+  </div>
+</section>
+
       <section className=" w-full flex flex-col items-center justify-start   bg-white ">
         <p className="mt-16 sm:text-5xl text-3xl  font-bold font-jose">
           🏗️ BUILT USING 🏔️
@@ -203,7 +204,7 @@ const Homepage=()=> {
         </div>
       </section>
 
-      <section className="bg-[#100a25] min-h-screen flex-col flex justify-center py-14 pb-16 items-center ">
+      <section className="bg-[#808080] min-h-screen flex-col flex justify-center py-14 pb-16 items-center ">
         <div className="sm:w-3/4 w-full px-8 flex justify-evenly">
           <img
             src="/img/future.gif"
