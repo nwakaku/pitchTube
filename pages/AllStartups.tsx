@@ -52,48 +52,44 @@ console.log(allStarts);
     abi: CoreContractAbi,
     signerOrProvider: signer || provider,
   });
+
+  let allStartups: Istarts[] = [];
  
   async function getMyStarts() {
     try {
       const myStartupTx = await core?.getListOfStartups();
       // console.log(myStartupTx);
       console.log(myStartupTx);
-      let allStartups : Istarts[] = [];
 
-      myStartupTx.forEach((itm : any) => {
-        if (itm.isActive){
-          allStartups.push({
-            name: itm.name,
-            description: itm.description,
-            tags: itm.tagline  ,
-            owner : itm.ownerAddress,
-            amt : itm.amount.toString(),
-            active : itm.isActive,
-            id : itm.sID.toString(),
-            votes : itm.upVoteCount.toString(),
-            imgHash : itm.imgHash,
-            vidHash : itm.videoHash
-          });
-        }
+      // myStartupTx.forEach((itm : any) => {
+      //   if (itm.isActive){
+      //     allStartups.push({
+      //       name: itm.name,
+      //       description: itm.description,
+      //       tags: itm.tagline  ,
+      //       owner : itm.ownerAddress,
+      //       amt : itm.amount.toString(),
+      //       active : itm.isActive,
+      //       id : itm.sID.toString(),
+      //       votes : itm.upVoteCount.toString(),
+      //       imgHash : itm.imgHash,
+      //       vidHash : itm.videoHash
+      //     });
+      //   }
        
-      });
+      // });
      
       // getImgVideo(allStarts.owner);
-      setAllStarts(allStartups);
+      setAllStarts(myStartupTx);
+      console.log(allStartups);
     } catch (err) {
       console.log(err);
     }
   }
   
 
-
-  
-
   useEffect(()=>{
     getMyStarts()
-    if(allStarts.owner ){
-     
-    }
   },[])
 
   return (

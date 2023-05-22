@@ -19,10 +19,10 @@ const Homepage=()=> {
    }, []);
   return (
     <>
-      <section className=" bg-[#100a25] min-h-screen font-mono w-full text-white flex items-center justify-center flex-col overflow-hidden ">
-        <div className="flex flex-col items-center justify-center sm:mt-16 mt-12  w-full ">
+      <section className="bg-[#100a25] min-h-screen font-mono w-full text-white flex items-center justify-center flex-col overflow-hidden">
+        <div className="flex flex-col items-center justify-center sm:mt-16 mt-12 w-full">
           <p className="font-jose text-xs sm:text-base">Welcome to the</p>
-          <p className="font-vt sm:text-9xl text-7xl  text-[#ff9e00]">
+          <p className="font-vt sm:text-9xl text-7xl text-[#ff9e00]">
             HatcheryDAO
           </p>
           <p className="font-jose text-xs sm:text-base">
@@ -31,31 +31,31 @@ const Homepage=()=> {
           <img src="/img/arr1.png" alt="img" className="ml-56 sm:w-32 w-28" />
           <Link
             href="/BuyNFT"
-            className=" z-30 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all border-dashed border-2 border-white  rounded-3xl hover:bg-white group"
+            className="z-30 relative inline-flex items-center justify-start px-6 py-3 overflow-hidden font-medium transition-all border-dashed border-2 border-white rounded-3xl hover:bg-white group"
           >
-            <span className="z-30 w-48 h-48 rounded-full rotate-[-40deg] bg-[#ff9e00] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0 "></span>
-            <span className="z-30 relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-black  font-bold font-vt  text-3xl ">
+            <span className="z-30 w-48 h-48 rounded-full rotate-[-40deg] bg-[#ff9e00] absolute bottom-0 left-0 -translate-x-full ease-out duration-500 transition-all translate-y-full mb-9 ml-9 group-hover:ml-0 group-hover:mb-32 group-hover:translate-x-0"></span>
+            <span className="z-30 relative w-full text-left text-white transition-colors duration-300 ease-in-out group-hover:text-black font-bold font-vt text-3xl">
               Buy NFT
             </span>
           </Link>
         </div>
 
-        <div className=" w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
-          <div className="sm:w-2/6 sm:mr-auto sm:ml-8  w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4  ">
-            <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10 ">
-              What is HatcheryDao ?
+        <div className="w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
+          <div className="sm:w-2/6 sm:mr-auto sm:ml-8 w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4">
+            <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10">
+              What is HatcheryDao?
             </p>
             <p className="text-xs sm:text-sm text-center sm:text-start z-20">
-              Hatchery Dao is a NFT gated startup incubator platform to promote
-              startups and help them to raise the funding . It is also a
-              DataExchange platform to buy sell critical data like balance sheet
-              , ledger , profit statement <b>PRIOR FROM GENERAL PUBLIC</b>{" "}
+              Hatchery Dao is an NFT gated startup incubator platform to promote
+              startups and help them raise funding. It is also a DataExchange
+              platform to buy and sell critical data like balance sheets,
+              ledgers, profit statements <b>PRIOR FROM GENERAL PUBLIC</b>.
             </p>
           </div>
           <img
             src="/img/earth.png"
             alt="img"
-            className="absolute z-10 w-9/12 sm:-top-48 sm:-right-64 -bottom-72 -right-32 animate-rotate "
+            className="absolute z-10 w-9/12 sm:-top-48 sm:-right-64 -bottom-72 -right-32 animate-rotate"
           />
         </div>
       </section>
@@ -109,7 +109,7 @@ const Homepage=()=> {
           Reasons why you should Buy HatcheryDAO SBT ?
         </p>
         <div className="grid sm:w-9/12 w-4/5 sm:grid-cols-3 grid-cols-2 items-center gap-5 bg-[#9d4edd] p-6 text-black rounded-3xl">
-        <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
+          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
             <img
               src="img/aplayer.png"
               alt="img"
@@ -130,13 +130,12 @@ const Homepage=()=> {
               className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
             />
             <p className="text-lg mb-3"> Invest as minimum as you want</p>
-            <p className="text-xs ">With the help of HatcheryDao Investor SBT you can invest as small
+            <p className="text-xs ">
+              With the help of HatcheryDao Investor SBT you can invest as small
               as 0.1$ , It must be greater than zero atleast , unless its no
               point to invest.
             </p>
           </div>
-
-          
 
           <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
             <img
@@ -145,7 +144,8 @@ const Homepage=()=> {
               className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
             />
             <p className="text-lg mb-3"> Get Investments all over the WORLD</p>
-            <p className="text-xs ">Anyone with a metamask wallet can invest and if you are a startup
+            <p className="text-xs ">
+              Anyone with a metamask wallet can invest and if you are a startup
               you can also get the funding from all over the world. Its that
               easy and simple. and not only that you will be able to exchange
               tokens into your fav token from our platform as well.
@@ -231,21 +231,28 @@ const Homepage=()=> {
         </div>
       </section>
       <div>
-      <div className="mx-auto w-full flex flex-col items-center justify-center  ">
-        <p className="sm:text-6xl text-3xl text-center my-4 mb-8  font-jose mt-12 ">So what you are waiting for ?
-        </p>
-        <p className="sm:text-5xl text-2xl text-center my-4 mb-8  font-vt mt-12 ">
-         If you want FREE Access ??
-        </p>
-        <p className="sm:text-2xl text-xl text-center my-4 mb-8  font-jose w-9/12 mx-auto ">
-          Share the project on twitter and contact the owner with tweet link 😊️
-        </p>
-          <p className="sm:text-4xl text-2xl text-center my-4 mb-8  font-jose mt-12 ">OR</p>
-          <Link href={"/BuyNFT"} className="mx-auto z-10 font-vt text-6xl bg-[#9d4edd] text-[#ffffff] rounded-3xl shadow-[#c3a2dd] shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear">Buy Now</Link>
+        <div className="mx-auto w-full flex flex-col items-center justify-center  ">
+          <p className="sm:text-6xl text-3xl text-center my-4 mb-8  font-jose mt-12 ">
+            So what you are waiting for ?
+          </p>
+          <p className="sm:text-5xl text-2xl text-center my-4 mb-8  font-vt mt-12 ">
+            If you want FREE Access ??
+          </p>
+          <p className="sm:text-2xl text-xl text-center my-4 mb-8  font-jose w-9/12 mx-auto ">
+            Share the project on twitter and contact the owner with tweet link
+            😊️
+          </p>
+          <p className="sm:text-4xl text-2xl text-center my-4 mb-8  font-jose mt-12 ">
+            OR
+          </p>
+          <Link
+            href={"/BuyNFT"}
+            className="mx-auto z-10 font-vt text-6xl bg-[#9d4edd] text-[#ffffff] rounded-3xl shadow-[#c3a2dd] shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear"
+          >
+            Buy Now
+          </Link>
         </div>
-      
         <img src="img/arr2.png" alt="img" width={250} className="ml-48" />{" "}
-       
       </div>
       <footer>
         <div className="bg-[#04040f] text-white grid grid-cols-2 w-full">
