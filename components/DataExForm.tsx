@@ -89,7 +89,7 @@ export default function DataExForm() {
       progressCallback
     );
    
-    console.log(response.data.Hash);
+    console.log(response.data);
     const uploadHash = response.data.Hash;
     toast.success("Encrypted File uploaded ");
     toast("Sign Transaction to Store")

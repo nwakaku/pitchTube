@@ -226,7 +226,7 @@ export default function OWNERS_ONLY() {
       <div className=" bg-[#100a25] min-h-screen w-full pb-16 flex flex-col items-center justify-center gap-4">
       <Head>
         <title>HatcheryDao - OwnersOnly</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
         <ToastContainer />

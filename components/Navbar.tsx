@@ -14,7 +14,9 @@ export default function Navbar() {
     <nav className="z-50 w-full bg-[#070a14] p-0 text-white font-body text-xl flex items-start justify-between transition-all duration-300 ease-linear fixed top-0">
 
       <div className="z-80 sm:w-72 cursor-pointer flex items-center mt-3 px-3 justify-center rounded-md">
-        <span className="font-heading text-3xl">Hatchery</span>
+       <Link href="/">
+        <span className="font-heading text-3xl">PitchTube</span>
+        </Link> 
       </div>
 
       <div className={`py-2 flex items-end justify-end sm:justify-between md:w-full flex-col sm:flex-row`}>
@@ -52,11 +54,11 @@ export default function Navbar() {
               Post & Edit
             </p>
           </Link>
-          <Link href="/DataExchange">
+          {/* <Link href="/DataExchange">
             <p className="z-80 cursor-pointer hover:bg-[#ff9e00] hover:text-black transition-all duration-200 ease-linear bg-transparent py-1 px-4 rounded-md text-center text-base md:text-lg">
               Data Exchange
             </p>
-          </Link>
+          </Link> */}
 
           <Link href="/PitchDeckPublic">
             <p className="z-80 cursor-pointer hover:bg-[#ff9e00] hover:text-black transition-all duration-200 ease-linear bg-transparent py-1 px-4 rounded-md text-center text-base md:text-lg">

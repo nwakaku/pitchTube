@@ -95,7 +95,7 @@ export default function Assets() {
       });
      
       // getImgVideo(allStarts.owner);
-      setAllStarts(allStartups);
+      setAllStarts(myStartupTx);
 
 
       const investedIdx = await core?.getTotalInvested();
@@ -118,29 +118,29 @@ export default function Assets() {
 
 
   return (
-    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-[url('/img/initial_img.jpg')] bg-cover bg-no-repeat  overflow-hidden  relative ">
+    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')] bg-cover bg-no-repeat  overflow-hidden  relative ">
      <Head>
         <title>Your Assets - HatcheryDao</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
-     <div className="absolute top-24 left-2 z-20 ">
+     <div className=" top-24 left-2 z-20 flex justify-center items-center">
+  <button
+    onClick={() => handleStartupsInvested()}
+    className="rounded-3xl bg-[#fff] hover:shadow-xl hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center mx-4 py-1.5 px-3 text-sm"
+  >
+    <img src="img/assetStarts.png" alt="img" className="sm:w-8 w-6 mr-2" />
+    <span>Startups Invested</span>
+  </button>
+  <button
+    onClick={getallBoughtData}
+    className="rounded-3xl bg-[#fff] hover:shadow-xl hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 my-4 mx-4 px-2 text-sm"
+  >
+    <img src="img/docs.png" alt="img" className="sm:w-8 w-6 mr-2" />
+    <span>Bought Data</span>
+  </button>
+</div>
 
-        <button
-          onClick={() => handleStartupsInvested()}
-          className="rounded-3xl  z-20 bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-purple-600 transition-all duration-200 ease-linear flex items-center justify-center mx-4 py-1.5 px-3 text-sm "
-          >
-          <img src="img/assetStarts.png" alt="img" className="sm:w-8 w-6 mr-2" />{" "}
-          <span>Startups Invested</span>
-        </button>
-    <button
-         onClick={getallBoughtData}
-         className="rounded-3xl z-20  bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-purple-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 my-4 mx-4 px-2 text-sm  "
-         >
-          <img src="img/docs.png" alt="img" className="sm:w-8 w-6 mr-2" />{" "}
-          <span>Bought Data</span>
-        </button>
-          </div>
 
         {!toggle && <div className='w-full  pt-10 flex items-center justify-start flex-col '>
           {assetArr[0] ? null :<h1 className='text-2xl font-bold text-white pt-40 flex flex-col items-center justify-center'> You havent Bought any Data yet

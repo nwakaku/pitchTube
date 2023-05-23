@@ -584,10 +584,10 @@
     react "^18.2.0"
     zustand "^4.0.0-rc.1"
 
-"@huddle01/huddle01-iframe@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@huddle01/huddle01-iframe/-/huddle01-iframe-0.0.8.tgz#b1f9f1b5545575c4234baa1f0af943e27da04e64"
-  integrity sha512-UitrTEZZqm0X9ju/v5UiMUNoRzRay+ssXwYPbwS0GtwmhGvKJWSSoy6YHqMztm4udaeoTPxV+xncGdh4R+IKnQ==
+"@huddle01/huddle01-iframe@^0.0.9":
+  version "0.0.9"
+  resolved "https://registry.yarnpkg.com/@huddle01/huddle01-iframe/-/huddle01-iframe-0.0.9.tgz#184066097171dda4f91f33e3e8469dcd70440533"
+  integrity sha512-Zx4o/ySo58WejAMW2BB9jxTHhqST1cx0i4sr/DSC4odhpn9xRLpTeUPkb1ZSx97l4qNbOCoLZmJoAnjUGQy41w==
 
 "@humanwhocodes/config-array@^0.11.8":
   version "0.11.8"

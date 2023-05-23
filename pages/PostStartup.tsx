@@ -128,6 +128,7 @@ function PostStartupExport() {
       
 
       const tx = await core?.getOwnerStartups();
+      console.log(tx);
 
       setMyStartup({
         name: tx.name,
@@ -149,10 +150,10 @@ function PostStartupExport() {
   useEffect(() => {}, []);
 
   return (
-    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('/img/grad2.jpg')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
+    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
       <Head>
         <title>Post Startups</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
       <ToastContainer />

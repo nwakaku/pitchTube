@@ -19,221 +19,255 @@ const Homepage=()=> {
    }, []);
   return (
     <>
-      <section className="bg-blue-500 text-white min-h-screen font-mono w-full flex items-center justify-center flex-col overflow-hidden">
-  <div className="flex flex-col items-center justify-center sm:mt-16 mt-12 w-full">
-    <p className="font-serif text-base sm:text-lg text-black">
-      Welcome to
-    </p>
-    <h1 className="font-serif text-5xl sm:text-6xl text-gray-200 tracking-wider leading-tight">
-      PitchTube
-    </h1>
-    <p className="font-serif text-base sm:text-lg text-black">
-      The One-Stop Shop for Investors and Startups
-    </p>
-    <img
-      src="/img/arr1.png"
-      alt="arrow"
-      className="mt-8 sm:mt-12 w-24 sm:w-32"
-    />
-    <Link
-      href="/BuyNFT"
-      className="mt-8 sm:mt-12 bg-gray-200 text-black px-8 py-4 rounded-full hover:bg-white hover:text-gray-200 transition-all duration-300 ease-in-out font-bold text-lg shadow-lg"
-    >
-      Buy NFT
-    </Link>
-  </div>
-
-  <div className="w-full sm:mr-auto flex items-center justify-center flex-col gap-2 font-jose sm:mt-24 mt-12 mb-8 relative">
-    <div className="sm:w-2/6 sm:mr-auto sm:ml-8 w-4/5 flex flex-col sm:items-start items-center sm:justify-start justify-center gap-4">
-      <p className="sm:text-3xl text-xl font-semibold animate-bouncein z-10">
-        What is PitchTube?
-      </p>
-      <p className="text-xs sm:text-sm text-center sm:text-start z-20">
-        PitchTube is an NFT gated startup incubator platform to promote
-        startups and help them raise funding. It is also a DataExchange
-        platform to buy and sell critical data like balance sheets,
-        ledgers, profit statements <b>PRIOR FROM GENERAL PUBLIC</b>.
-      </p>
-    </div>
-    <img
-      src="/img/earth.png"
-      alt="img"
-      className="absolute z-10 w-9/12 sm:-top-48 sm:-right-64 -bottom-72 -right-32 animate-rotate"
-    />
-  </div>
-</section>
+      <section className="bg-gray-500 dark:bg-gray-900">
+        <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
+          <div className="mr-auto place-self-center lg:col-span-7">
+            <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
+              Empowering Startups <br /> with Opportunities
+            </h1>
+            <p className="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-gray-400">
+              PitchTube is an NFT-gated startup incubator platform that enables startups to raise funding through video pitches while providing networking and mentorship opportunities
+            </p>
+            <div className="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+              <a
+                href="/dashboard"
+                className="text-white bg-[#ff9e00]-500 hover:bg-[#ff9e00]-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 dark:bg-[#ff9e00] dark:hover:bg-[#ff9e00] focus:outline-none dark:focus:ring-green-800"
+              >
+                Launch App
+              </a>
+            </div>
+          </div>
+          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+            <img
+              src={
+                "https://img.freepik.com/premium-vector/financial-profit-investment-concept_1016-1322.jpg?w=740"
+              }
+              alt="hero image"
+            />
+          </div>
+        </div>
+      </section>
 
       <section className=" w-full flex flex-col items-center justify-start   bg-white ">
-        <p className="mt-16 sm:text-5xl text-3xl  font-bold font-jose">
-          🏗️ BUILT USING 🏔️
-        </p>
-        <div className="grid sm:grid-cols-5 grid-cols-3 auto-cols-max items-center  ">
+        
+        <div className="grid sm:grid-cols-4 grid-cols-3 auto-cols-max items-center  ">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Theta_logo.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/huddle.png" alt="img" className=" sm:p-12 p-6" />
-          <img src="/img/filecoin.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/livepeer.png" alt="img" className=" sm:p-12 p-6" />
-          <img src="/img/spheron.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/lighthouse.jpg" alt="img" className=" sm:p-12 p-6" />
         </div>
 
-        <p className="mt-8 sm:text-4xl text-2xl font-semibold font-jose text-[#070a14]">
+        <p className="mt-8 sm:text-4xl text-3xl font-semibold font-jose text-[#070a14]">
           Who is this for ?
         </p>
-
-        <div className="flex sm:flex-row flex-col items-center justify-center w-full sm:w-3/4 mb-12 gap-4">
-          <img
-            src="/img/investor.jpg"
-            alt="img"
-            className="w-9/12 sm:w-4/12 p-8 rounded-full"
-          />
-          <p className=" font-jose sm:text-sm text-xs p-8 text-center sm:w-2/5 w-9/12">
-            The Investors who are looking for early age startups to{" "}
-            <b>invest</b> and want to aquire profit in long terms. They will be
-            able to Invest and <b>Buy the critical datas</b> like profit
-            statement . They are not only limited to this , they will be able to
-            post some data like other startups <b>balance sheet</b> also{" "}
-          </p>
-        </div>
-        <div className="flex sm:flex-row flex-col items-center justify-center w-full sm:w-3/4 gap-4">
-          <p className=" font-jose sm:text-sm text-xs p-8 text-center sm:w-2/5 w-9/12">
+          <div className="flex sm:flex-row flex-col items-center justify-around w-full sm:w-3/4 gap-4">
+          <p className=" font-jose sm:text-xl text-xs p-8 text-center sm:w-2/5 w-9/12">
             The Startups that are looking for initial funding can post about
             their startus here , they will be able to do the basic{" "}
-            <b>CRUD operations</b> on few things and will also be able to sell
-            their data like ledger ,<b>profit statement</b> etc{" "}
+            <b>CRUD operations</b> on few things.
           </p>
           <img
-            src="/img/startup.jpg"
+            src="https://inc42.com/wp-content/uploads/2022/03/pepper-diff-stages-of-startup-ft-1024x768.jpg"
             alt="img"
             className="w-9/12 sm:w-4/12 p-8 rounded-full"
           />
         </div>
-      </section>
-
-      <section className=" rounded-xl flex flex-col items-center justify-center w-full min-h-screen sm:p-14 p-8">
-        <p className="sm:text-4xl text-2xl text-center font-semibold my-12">
-          Reasons why you should Buy PitchTube SBT ?
-        </p>
-        <div className="grid sm:w-9/12 w-4/5 sm:grid-cols-3 grid-cols-2 items-center gap-5 bg-[#9d4edd] p-6 text-black rounded-3xl">
-          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="img/aplayer.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3"> Identify the A-Player earlier</p>
-            <p className="text-xs ">
-              With the help of PitchTube SBTs you will be eligible to
-              participate in the DataExchange platform. It is a type of DataDao
-              to buy and sell the critical data like balance sheet , ledger ,
-              profit statement etc.
-            </p>
-          </div>
-          <div className="flex flex-col items-start justify-start w-full hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="/img/less.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3"> Invest as minimum as you want</p>
-            <p className="text-xs ">
-              With the help of PitchTube Investor SBT you can invest as small
-              as 0.1$ , It must be greater than zero atleast , unless its no
-              point to invest.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="/img/earth2.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3"> Get Investments all over the WORLD</p>
-            <p className="text-xs ">
-              Anyone with a metamask wallet can invest and if you are a startup
-              you can also get the funding from all over the world. Its that
-              easy and simple. and not only that you will be able to exchange
-              tokens into your fav token from our platform as well.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="/img/operation.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3"> CRU Operations</p>
-            <p className="text-xs ">
-              We hate mistakes , so we have made it easy for you to do the CRUD
-              operations on your startup. You can do the basic CRU operations on
-              name, description, amount and other things. We intentionally left
-              the D, you cant delete but deactivations are allowed.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="/img/easy.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3">Simple UI</p>
-            <p className="text-xs ">
-              I tried to make it as simple as ABC , You will be able to see all
-              your startups that you invested , all the investments that you
-              have done and many things like that in one place.
-            </p>
-          </div>
-
-          <div className="flex flex-col items-start justify-start w-full  hover:shadow-xl shadow-black transition-all duration-150 ease-linear p-2 hover:bg-white rounded-xl ">
-            <img
-              src="/img/doubt.png"
-              alt="img"
-              className="w-12 hover:rotate-180 duration-150 transition-all ease-linear"
-            />
-            <p className="text-lg mb-3">
-              Clear your doubts with startup OWNERS
-            </p>
-            <p className="text-xs ">
-              We have implemented the huddle01 sdk for doing one-on-one meeting
-              with the startups owners before you invest , although it is not
-              necessary but it is always a great idea to know you company before
-              you invest in it.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-[#808080] min-h-screen flex-col flex justify-center py-14 pb-16 items-center ">
-        <div className="sm:w-3/4 w-full px-8 flex justify-evenly">
+        <div className="flex sm:flex-row flex-col items-center justify-around w-full sm:w-3/4 mb-12 gap-4">
           <img
-            src="/img/future.gif"
+            src="https://st3.depositphotos.com/3382541/15072/v/600/depositphotos_150728272-stock-illustration-flat-young-smiley-investors.jpg"
             alt="img"
-            className="w-2/5 my-ayto hidden sm:inline-block"
+            className="w-9/12 sm:w-4/12 p-8 rounded-full"
           />
-          <div>
-            <p className="sm:text-7xl  text-center my-4 mb-8 text-4xl font-vt text-white ">
-              Some future Implementation 🚀️
-            </p>
-            <p className=" sm:ml-auto py-2 hover:scale-105 px-4 bg-[#9d4edd] hover:bg-white text-[#070a14] rounded-full transition-all duration-200 ease-linear font-jose text-center mt-4 font-seibold sm:text-xl text-lg sm:w-3/5 w-full">
-              A Dex can be implemented to facilitate trade in FIL 💱️{" "}
-            </p>
-            <p className="py-2 hover:scale-105 px-4 bg-[#9d4edd] hover:bg-white text-[#070a14] rounded-full transition-all duration-200 ease-linear font-jose text-center mt-4 font-seibold sm:text-xl text-lg sm:w-3/5 w-full">
-              {" "}
-              🧑‍🤝‍🧑️ Voteout based on majority if caught in wrong practices
-            </p>
-            <p className=" sm:ml-auto py-2 hover:scale-105 px-4 bg-[#9d4edd] hover:bg-white text-[#070a14] rounded-full transition-all duration-200 ease-linear font-jose text-center mt-4 font-seibold sm:text-xl text-lg sm:w-3/5 w-full">
-              Implementation of decentralized DBMS for storing data 🗄️
-            </p>
-            <p className="py-2 hover:scale-105 px-4 bg-[#9d4edd] hover:bg-white text-[#070a14] rounded-full transition-all duration-200 ease-linear font-jose text-center mt-4 font-seibold sm:text-xl text-lg sm:w-3/5 w-full">
-              🆔️ Lens Profile can be integrated for decentralized Identity
-            </p>
-            <p className="sm:ml-auto py-2 hover:scale-105 px-4 bg-[#9d4edd] hover:bg-white text-[#070a14] rounded-full transition-all duration-200 ease-linear font-jose text-center mt-4 font-seibold sm:text-xl text-lg sm:w-3/5 w-full">
-              Live prices of invested token based on current market 💹️
-            </p>
+          <p className=" font-jose sm:text-xl text-2xl p-8 text-center sm:w-2/5 w-9/12">
+            The Investors who are looking for early age startups to{" "}
+            <b>invest</b> and want to acquire profit in long terms. They will be
+            able to Invest.
+          </p>
+        </div>
+       
+       { /* <some> </some> */}
+      </section>
+       <section className="bg-gray-50 dark:bg-gray-800">
+        <div className="max-w-screen-xl px-4 py-8 mx-auto space-y-12 lg:space-y-20 lg:py-24 lg:px-6">
+          {/* <!-- Row --> */}
+          <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+            <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                Problems We Solve
+              </h2>
+
+              {/* <!-- List --> */}
+              <ul
+                role="list"
+                className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
+              >
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    StartUps Looking for funding
+                  </span>
+                </li>
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    Investor Looking for an Opportunity to Invest.
+                  </span>
+                </li>
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    Connecting StartUps with Investors
+                  </span>
+                </li>
+              </ul>
+              <p className="mb-8 font-light lg:text-xl">
+                Empowering Startups with the Opportunity for Video Pitches and Access to Funding.
+              </p>
+            </div>
+            <img
+              className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+              src="https://img.freepik.com/free-vector/illustration-financial-concept_53876-20606.jpg?w=826&t=st=1683797087~exp=1683797687~hmac=3a16a15729d8bc7c46b9f1bc6f4908ec19a9fe2bef4300a5f1ee382a97a8e83c"
+              alt="dashboard feature image"
+            />
+          </div>
+          {/* <!-- Row --> */}
+          <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
+            <img
+              className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
+              src="https://img.freepik.com/free-vector/transfer-money-concept-illustration_114360-3762.jpg?w=740&t=st=1683797334~exp=1683797934~hmac=b6aa491fbeb186ea42db21d32f327e692bd0302adf3537329bda76b4efe03e5d"
+              alt="feature image 2"
+            />
+            <div className="text-gray-500 sm:text-lg dark:text-gray-400">
+              <h2 className="mb-4 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+                How It Works
+              </h2>
+              {/* <!-- List --> */}
+              <ul
+                role="list"
+                className="pt-8 space-y-5 border-t border-gray-200 my-7 dark:border-gray-700"
+              >
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-500 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    You Buy Soulbound NFTs To Give Access
+                  </span>
+                </li>
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    Investing In Favourite Startups
+                  </span>
+                </li>
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    Private video chat with startup owners
+                  </span>
+                </li>
+
+                <li className="flex space-x-3">
+                  {/* <!-- Icon --> */}
+                  <svg
+                    className="flex-shrink-0 w-5 h-5 text-yellow-400 dark:text-yellow-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span className="text-base font-medium leading-tight text-gray-900 dark:text-white">
+                    Knowledge management
+                  </span>
+                </li>
+              </ul>
+              <p className="font-light lg:text-xl">
+                PitchTube is an NFT-based startup incubator platform that enables startups to raise
+                 funding through video pitches while providing networking and mentorship opportunities.
+              </p>
+            </div>
           </div>
         </div>
       </section>
+
+      
+
+     
       <div>
         <div className="mx-auto w-full flex flex-col items-center justify-center  ">
           <p className="sm:text-6xl text-3xl text-center my-4 mb-8  font-jose mt-12 ">
@@ -243,15 +277,13 @@ const Homepage=()=> {
             If you want FREE Access ??
           </p>
           <p className="sm:text-2xl text-xl text-center my-4 mb-8  font-jose w-9/12 mx-auto ">
-            Share the project on twitter and contact the owner with tweet link
+            Jump right In and buy an NFT to Enjoy
             😊️
           </p>
-          <p className="sm:text-4xl text-2xl text-center my-4 mb-8  font-jose mt-12 ">
-            OR
-          </p>
+          
           <Link
             href={"/BuyNFT"}
-            className="mx-auto z-10 font-vt text-6xl bg-[#9d4edd] text-[#ffffff] rounded-3xl shadow-[#c3a2dd] shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear"
+            className="mx-auto z-10 font-vt text-6xl bg-green-400 text-[#ffffff] rounded-3xl shadow-green-100 shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear"
           >
             Buy Now
           </Link>
@@ -266,9 +298,7 @@ const Homepage=()=> {
               A One stop shop for STARTUPS and INVESTORS
             </p>
             <div className="flex   gap-8 mt-2">
-              <div
-                onClick={() => handleContact("https://twitter.com/shikkhar_")}
-              >
+              <div>
                 <img
                   className="cursor-pointer"
                   src="/img/twitter.png"
@@ -276,9 +306,7 @@ const Homepage=()=> {
                   width={40}
                 />
               </div>
-              <div
-                onClick={() => handleContact("https://github.com/shikhar360")}
-              >
+              <div>
                 <img
                   className="cursor-pointer"
                   src="/img/github.png"
@@ -286,11 +314,7 @@ const Homepage=()=> {
                   width={40}
                 />
               </div>
-              <div
-                onClick={() =>
-                  handleContact("https://linkedin.com/in/shikhar360")
-                }
-              >
+              <div>
                 <img
                   className="cursor-pointer"
                   src="/img/linkin.png"

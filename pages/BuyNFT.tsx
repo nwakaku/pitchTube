@@ -100,7 +100,7 @@ export default function BuyNFT() {
     <>
     <Head>
         <title>HatcheryDao NFTs</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
       <ToastContainer />
@@ -122,7 +122,7 @@ export default function BuyNFT() {
                 onClick={() => buyStartupSBT()}
                 className={`mb-4 bg-gradient-to-br from-[#ff9900] to-[#fdcf00] py-2 px-4 rounded-xl hover:shadow-black shadow-black hover:scale-105 transition-all duration-300 ease-linear font-semibold`}
               >
-                Buy NOW : 0.1 FIL
+                Buy NOW : 0.1 TFUEL
               </button>
             )}
 
@@ -157,7 +157,7 @@ export default function BuyNFT() {
                 onClick={() => buyInvestorSBT()}
                 className={`mb-4 bg-gradient-to-br from-[#ff9900] to-[#fdcf00] py-2 px-4 rounded-xl hover:shadow-black shadow-black hover:scale-105 transition-all duration-300 ease-linear font-semibold`}
               >
-                Buy NOW : 0.2 FIL
+                Buy NOW : 0.2 TFUEL
               </button>
             )}
 

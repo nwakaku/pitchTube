@@ -299,15 +299,12 @@ function EditPostExport() {
   // ---------------------------------------------------------------------------------
 
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen w-full font-jose bg-[#100a25]  bg-cover bg-no-repeat sm:pt-20 py-20 sm:pb-44  relative">
+    <div className="flex items-center justify-center flex-col min-h-screen w-full font-jose bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat sm:pt-20 py-20 sm:pb-44  relative">
       <Head>
         <title> Post & Edit Startup</title>
        
       </Head>
       <ToastContainer />
-      <div className="sm:w-60 w-48 h-48 sm:h-60 animate-bounceb delay-1000 rounded-full bg-gradient-to-br to-[#9a75ff] from-[#3b296d] absolute md:top-16  md:left-48  sm:top-12 sm:left-28  top-28 left-8 z-10 "></div>
-      <div className="sm:w-60 w-48 h-48 sm:h-60 animate-bounceb rounded-full bg-gradient-to-tl to-[#9a75ff] from-[#3b296d] absolute  md:bottom-32 md:right-48 sm:bottom-24 sm:right-28 bottom-20 right-12 z-10"></div>
-
       <div className="flex flex-col text-white sm:w-6/12 w-11/12 z-30  bg-white/10 backdrop-blur-lg rounded-2xl items-start justify-start gap-2 my-auto  ">
         <div className="flex items-center justify-start  w-full z-30 ">
           {activateEdit && activateEdit !== "POST_NEW" ? (
@@ -357,7 +354,7 @@ function EditPostExport() {
                 {activateEdit !== "POST_NEW" && (
                   <button
                     onClick={() => editNameTx(name)}
-                    className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                    className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                   >
                     Save
                   </button>
@@ -382,7 +379,7 @@ function EditPostExport() {
                 {activateEdit !== "POST_NEW" && (
                   <button
                     onClick={() => editTagTx(tagline)}
-                    className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                    className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                   >
                     Save
                   </button>
@@ -408,7 +405,7 @@ function EditPostExport() {
                 {activateEdit !== "POST_NEW" && (
                   <button
                     onClick={() => editAmountTx(amount)}
-                    className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                    className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                   >
                     Save
                   </button>
@@ -432,7 +429,7 @@ function EditPostExport() {
                 {activateEdit !== "POST_NEW" && (
                   <button
                     onClick={() => editDescripTx(descrip)}
-                    className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                    className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                   >
                     Save
                   </button>
@@ -461,7 +458,7 @@ function EditPostExport() {
             
                 <button
                   onClick={() => changeImg(img)}
-                  className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                  className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                 >
                   Save
                 </button>
@@ -489,7 +486,7 @@ function EditPostExport() {
                 <button
                   disabled={isLoading || !createAsset}
                   onClick={() => createAsset?.()}
-                  className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                  className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
                 >
                   Save
                 </button>
@@ -500,7 +497,7 @@ function EditPostExport() {
           {activateEdit === "POST_NEW" && (
             <button
               onClick={() => submitPost(post)}
-              className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+              className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-3 hover:scale-110 hover:shadow-xl hover:shadow-yellow-800 rounded-xl transition-all duration-150 ease-linear"
             >
               Save
             </button>

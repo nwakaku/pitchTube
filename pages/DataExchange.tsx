@@ -102,7 +102,7 @@ export default function DataExchange() {
     <div className="w-full min-h-screen overflow-x-hidden   relative bg-[url('/img/grad2.jpg')] bg-cover bg-no-repeat  overflow-hidden ">
       <Head>
         <title>Data Exchange</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
       <ToastContainer />
@@ -116,7 +116,7 @@ export default function DataExchange() {
     <img src={"/img/lock.jpg"} alt="header" className="sm:h-48 h-48 w-full  " />
     <div className="w-full flex flex-col px-3">
       <p className=" text-md font-semibold pt-3 truncate">{itm.name}</p>
-      <p className=" text-lg font-bold pt-1 ">{itm.amount / 10**18} FIL</p>
+      <p className=" text-lg font-bold pt-1 ">{itm.amount / 10**18} TFUEL</p>
       <p className=" text-xs font-bold text-stone-200 pt-0.5 truncate">
         {itm.owner}
       </p>

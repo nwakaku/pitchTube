@@ -126,11 +126,11 @@ function ExpandExport() {
 
   return (
     <>
-    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('/img/grad3.jpg')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
+    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
       <ToastContainer />
       <Head>
         <title>HatcheryDao</title>
-         <meta name="description" content="Created with <3 by Shikhar" />
+         <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
       
@@ -168,7 +168,7 @@ function ExpandExport() {
 
           <div className="flex items-center justify-between gap-8 ">
             <span className="text-base mt-3 ml-4 text-white  ">
-              Seeking - <b className="font-bold text-xl">{amt} FIL</b>
+              Seeking - <b className="font-bold text-xl">{amt} TFUEL</b>
             </span>
            
           </div>
@@ -221,7 +221,7 @@ function ExpandExport() {
                   handleInvest
                   }
                   className="text-black text-center text-sm border w-full border-zinc-300 px-4  rounded-sm h-8 "
-                  placeholder="1 FIL - $Max FIL"
+                  placeholder="1 TFUEL - $Max TFUEL"
                 />
 
                 
