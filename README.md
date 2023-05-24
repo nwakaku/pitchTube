@@ -94,6 +94,13 @@ The Platform is created using the Next.js framework and the styling is done usin
 
 - Also i was using the protocols like Huddle01 and Livepeer for thr first time , It was quite challenging to implement all that but have to say their docs helped me a lot.
 
+## dev
+Name:   Wisdom Chris
+
+Email:   [gmail](nwakakucc@gmail.com)
+
+Track:    Video Track
+
 ## How to run the app ? 💫️
 
 Just Three Commands to get started
