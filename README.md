@@ -1,10 +1,9 @@
-https://user-images.githubusercontent.com/98407930/216965351-664b7258-9690-47d4-a740-878f24376250.mp4
 
-[Website's LINK](https://hatchery-dao.vercel.app/)
+[Website's LINK](https://pitch-tube.vercel.app/)
 
 [Youtube's LINK](https://youtu.be/BLiCtM5fUBs)
 
-# PitchTube 🐣️
+# PitchTube
 
 PitchTube is an innovative startup incubator platform that operates on the concept of NFT (Non-Fungible Tokens). It aims to support and promote startups by providing them with a unique opportunity to raise funding through video pitches. By utilizing the power of NFTs, PitchTube offers a novel approach to attract potential investors and showcase the potential of budding businesses.
 
@@ -13,7 +12,7 @@ Through this platform, startups can create captivating video presentations that 
 PitchTube provides an inclusive platform for individuals holding the **Investor Soulbound NFT**, granting them access to invest in startups with the freedom to choose their desired investment amount, ranging from minimal to substantial.
 
 
-## How the Platform makes money ? 💸️ 💰️
+## How the Platform makes money ?
 
 There are two ways in which the Platform can make money
 
@@ -31,7 +30,7 @@ The owner earns a certain percent of commission on each transaction made by inve
 Currently the commission on investments is **10%** but can be changed in the future if the Platform wants.
 
 
-## Features 🧑‍💻️
+## Features 🧑
 
 There are many features which are implemented while the creation of the platform which include :
 
