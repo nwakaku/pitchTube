@@ -7,11 +7,11 @@ export const thetaTestnet = {
   nativeCurrency: {
     decimals: 18,
     name: "Theta", // Update with the native currency name of the Theta Testnet
-    symbol: "THETA", // Update with the native currency symbol of the Theta Testnet
+    symbol: "TFUEL", // Update with the native currency symbol of the Theta Testnet
   },
   rpcUrls: {
-    public: { http: ["https://api.thetatoken.org/rpc"] }, // Update with the RPC URL for the Theta Testnet
-    default: { http: ["https://api.thetatoken.org/rpc"] }, // Update with the default RPC URL for the Theta Testnet
+    public: { http: ["https://eth-rpc-api-testnet.thetatoken.org/rpc"] }, // Update with the RPC URL for the Theta Testnet
+    default: { http: ["https://eth-rpc-api-testnet.thetatoken.org/rpc"] }, // Update with the default RPC URL for the Theta Testnet
   },
   blockExplorers: {
     etherscan: { name: "ThetaScan", url: "https://explorer.thetatoken.org/" }, // Update with the block explorer information for the Theta Testnet

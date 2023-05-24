@@ -60,23 +60,23 @@ console.log(allStarts);
       const myStartupTx = await core?.getListOfStartups();
       console.log(myStartupTx);
 
-      // myStartupTx.forEach((itm : any) => {
-      //   if (itm.isActive){
-      //     allStartups.push({
-      //       name: itm.name,
-      //       description: itm.description,
-      //       tags: itm.tagline  ,
-      //       owner : itm.ownerAddress,
-      //       amt : itm.amount.toString(),
-      //       active : itm.isActive,
-      //       id : itm.sID.toString(),
-      //       votes : itm.upVoteCount.toString(),
-      //       imgHash : itm.imgHash,
-      //       vidHash : itm.videoHash
-      //     });
-      //   }
+      myStartupTx.forEach((itm : any) => {
+        if (itm.isActive){
+          allStartups.push({
+            name: itm.name,
+            description: itm.description,
+            tags: itm.tagline  ,
+            owner : itm.ownerAddress,
+            amt : itm.amount.toString(),
+            active : itm.isActive,
+            id : itm.sID.toString(),
+            votes : itm.upVoteCount.toString(),
+            imgHash : itm.imgHash,
+            vidHash : itm.videoHash
+          });
+        }
        
-      // });
+      });
      
       // getImgVideo(allStarts.owner);
       setAllStarts(myStartupTx);
@@ -115,11 +115,12 @@ console.log(allStarts);
               alt="header"
               className="inline-block h-3 w-3"
             />
+            {/* {console.log(itm.ownerAddress)} */}
             <span className='text-xs mx-0.5'>({itm.votes})</span> </p>
             <Link
               href={{
                 pathname: "/Expand",
-                query: { name: itm.name, descrip: itm.description, tags: itm.tags, owner: itm.owner, amt: itm.amt, votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
+                query: { name: itm.name, descrip: itm.description, tags: itm.tags, owner: itm.ownerAddress, amt: itm.amt, votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
               }}
               className="rounded-2xl bg-yellow-500 hover:shadow-xl hover:scale-110 hover:shadow-black-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 px-3 sm:my-3 my-1 mr-2 sm:ml-auto"
             >

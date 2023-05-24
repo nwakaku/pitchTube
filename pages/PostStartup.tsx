@@ -164,14 +164,14 @@ function PostStartupExport() {
             query: { name: "POST_NEW" },
           }}
           // onClick={handleActive}
-          className="rounded-3xl   bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-purple-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 px-3  "
+          className="rounded-3xl   bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 px-3  "
         >
           <img src="img/plus.png" alt="img" className="sm:w-12 w-8 mr-2" />{" "}
           <span>Post your Startup</span>
         </Link>
 
         <button
-          className="rounded-3xl   bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-purple-600 transition-all duration-200 ease-linear flex items-center justify-center py-0.5 px-2 ml-4 "
+          className="rounded-3xl   bg-[#fff]  hover:shadow-xl  hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center py-0.5 px-2 ml-4 "
           onClick={getDataTx}
         >
           <img src="img/refresh.png" alt="img" className="sm:w-8 w-6 mr-2" />{" "}

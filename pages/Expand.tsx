@@ -51,8 +51,6 @@ function ExpandExport() {
 
   const router = useRouter();
   const {name , descrip , tags , owner , amt , votes , imgHash , vidHash} = router?.query
-  console.log(name , descrip , tags , owner , amt);
-
 
   const provider = useProvider();
   const { data: signer } = useSigner();
@@ -227,7 +225,7 @@ function ExpandExport() {
                 
                   <button
                     onClick={() => investStartup(invest as number)}
-                    className="bg-[#2f1e6b] text-white py-1 px-4 w-3/4 mx-auto my-2 hover:scale-110 hover:shadow-xl hover:shadow-violet-800 rounded-xl transition-all duration-150 ease-linear"
+                    className="bg-[#ff9e00] text-white py-1 px-4 w-1/4 mx-auto my-2 hover:scale-110 hover:shadow-xl hover:shadow-green-800 rounded-xl transition-all duration-150 ease-linear"
                   >
                    Invest
                   </button>

@@ -214,6 +214,8 @@ export default function OWNERS_ONLY() {
       ExBal: ExBal?.formatted
     })
 
+    console.log(HatcheryBal);
+
 
   }
 
