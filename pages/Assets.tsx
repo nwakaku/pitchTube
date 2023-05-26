@@ -14,7 +14,7 @@ import Head from 'next/head';
 interface Mystarts {
   name: string;
   description: string;
-  tags: string;
+  tagline: string;
   owner : string;
   amt : string
   votes : string
@@ -30,7 +30,7 @@ export default function Assets() {
    const [ allStarts , setAllStarts ] = useState<Mystarts[]>([{
     name: "",
     description: "",
-    tags: '',
+    tagline: '',
     owner : '',
     amt : '',
     votes : '',
@@ -84,7 +84,7 @@ export default function Assets() {
           allStartups.push({
             name: itm.name,
             description: itm.description,
-            tags: itm.tagline  ,
+            tagline: itm.tagline  ,
             owner : itm.ownerAddress,
             amt : itm.amount.toString(),
             votes : itm.upVoteCount.toString(),
