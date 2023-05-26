@@ -76,9 +76,12 @@ export default function AllStartups() {
         }
        
       });
+
+      console.log(allStartups);
      
       // getImgVideo(allStarts.owner);
       setAllStarts(myStartupTx);
+      console.log(allStarts);
     } catch (err) {
       console.log(err);
     }
@@ -106,6 +109,7 @@ export default function AllStartups() {
           alt="header"
           className="h-40 w-48"
         />
+        {/* {console.log(itm.amount)} */}
         <div className="w-full flex flex-col">
           <div className='w-full flex sm:flex-row flex-col mt-3 sm:mt-0 items-center justify-start'>
             <p className='text-white font-semibold pl-2 mr-2 text-md sm:text-2xl'>{itm.name}<img
@@ -113,12 +117,12 @@ export default function AllStartups() {
               alt="header"
               className="inline-block h-3 w-3"
             />
-            {/* {console.log(itm.amount.toString())} */}
+            {console.log(itm.amount)}
             <span className='text-xs mx-0.5'>({itm.votes})</span> </p>
             <Link
               href={{
                 pathname: "/Expand",
-                query: { name: itm.name, descrip: itm.description, tags: itm.tagline, owner: itm.ownerAddress, amt: itm.amount.toString(), votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
+                query: { name: itm.name, descrip: itm.description, tags: itm.tagline, owner: itm.ownerAddress, amt: itm.amount?.toString(), votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
               }}
               className="rounded-2xl bg-yellow-500 hover:shadow-xl hover:scale-110 hover:shadow-black-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 px-3 sm:my-3 my-1 mr-2 sm:ml-auto"
             >
@@ -128,7 +132,7 @@ export default function AllStartups() {
           <p className="text-base tracking-widest ml-2 sm:block hidden font-semibold">Tagline :{itm.tagline}</p>
           <div className="text-sm px-2 py-2 w-full overflow-hidden">
             <p className='text-clip h-16 overflow-scroll scrollbar-hide'>
-              {itm.tags}
+              {itm.amount?.toString()}
             </p>
           </div>
         </div>

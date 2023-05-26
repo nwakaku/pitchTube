@@ -50,7 +50,9 @@ interface IvidImg{
 function ExpandExport() {
 
   const router = useRouter();
-  const {name , descrip , tags , owner , amt , votes , imgHash , vidHash} = router?.query
+  const { name, descrip, tags, owner, amt, votes, imgHash, vidHash } = router?.query || {};
+
+  // const {name , descrip , tags , owner , amt.toString() , votes , imgHash , vidHash} = router?.query
 
   const provider = useProvider();
   const { data: signer } = useSigner();
