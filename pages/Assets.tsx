@@ -47,30 +47,7 @@ export default function Assets() {
       signerOrProvider: signer || provider,
     });
 
-    const exchange = useContract({
-      address: ExchangeContractAddress,
-      abi: ExchangeContractAbi,
-      signerOrProvider: signer || provider,
-    });
-
-  async function getallBoughtData( ){
-    try {
-      
-      const tx  = await exchange?.getAllBoughtData();
-      
-      
-      // console.log(tx);
-      setAssetArr(tx)
-      setToggle(false)
-    } catch (error) {
-      console.log(error);
-    }
-  }
-  
-  useEffect(() => {
-    getallBoughtData()
-  }, [])
-  
+   
 
   async function handleStartupsInvested(){
     try {
@@ -115,6 +92,12 @@ export default function Assets() {
     }
   }
 
+  useEffect(() => {
+    setToggle(true);
+    handleStartupsInvested();
+  }, [])
+  
+
 
 
   return (
@@ -124,34 +107,10 @@ export default function Assets() {
          <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
-     <div className=" top-24 left-2 z-20 flex justify-center items-center">
-  <button
-    onClick={() => handleStartupsInvested()}
-    className="rounded-3xl bg-[#fff] hover:shadow-xl hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center mx-4 py-1.5 px-3 text-sm"
-  >
-    <img src="img/assetStarts.png" alt="img" className="sm:w-8 w-6 mr-2" />
-    <span>Startups Invested</span>
-  </button>
-  <button
-    onClick={getallBoughtData}
-    className="rounded-3xl bg-[#fff] hover:shadow-xl hover:scale-110 hover:shadow-yellow-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 my-4 mx-4 px-2 text-sm"
-  >
-    <img src="img/docs.png" alt="img" className="sm:w-8 w-6 mr-2" />
-    <span>Bought Data</span>
-  </button>
+     <div className=" m-5 top-24 left-2 z-20 flex justify-center items-center bg-gray-900 text-white py-2 px-4 rounded-lg">
+ <p className='text-white '>StartUp Invested</p>
 </div>
 
-
-        {!toggle && <div className='w-full  pt-10 flex items-center justify-start flex-col '>
-          {assetArr[0] ? null :<h1 className='text-2xl font-bold text-white pt-40 flex flex-col items-center justify-center'> You havent Bought any Data yet
-          <img src="/img/doubt.png" alt="images" />
-          </h1> }
-             {assetArr.map((itm : string , idx : number ) => 
-             <div key={idx} className=' w-1/2 mx-auto mb-3'>
-              <BoughtData cid={itm}/>
-             </div>
-             )}
-        </div> }
 
 
         {toggle && investedStartups.map((itm : string , idx : number)=>
@@ -177,9 +136,10 @@ export default function Assets() {
           <p className=" text-white tracking-widest ml-2 sm:block hidden font-semibold">Tagline :</p>
           <div className=" text-sm  px-2  py-2   w-full overflow-hidden ">
             <p className='text-clip text-white h-16  overflow-scroll scrollbar-hide'>
-              {allStarts[+itm].tagline}
-              </p> 
-              </div>
+              {allStarts[+itm].tagline}<br/>
+              {invested/ 10**18}
+            </p> 
+          </div>
           </div>
        </div>
         ) }

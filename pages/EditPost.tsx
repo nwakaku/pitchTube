@@ -348,7 +348,7 @@ function EditPostExport() {
                     activateEdit === "POST_NEW" ? handlePost : handleName
                   }
                   className="text-black text-start text-sm border w-full border-zinc-300 px-8  rounded-sm h-8 "
-                  placeholder="A Million Dollar Startup"
+                  placeholder="Name Of Startup"
                 />
 
                 {activateEdit !== "POST_NEW" && (
@@ -374,7 +374,7 @@ function EditPostExport() {
                     activateEdit === "POST_NEW" ? handlePost : handleTag
                   }
                   className="text-black text-start text-sm border w-full border-zinc-300 px-8  rounded-sm h-8 "
-                  placeholder="Delivering values to Millions"
+                  placeholder="Tagline Of Startup"
                 />
                 {activateEdit !== "POST_NEW" && (
                   <button
