@@ -44,7 +44,7 @@ function PitchDeck() {
          <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>
-      <div className=" w-full min-h-screen  flex  flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat items-center gap-4 sm:pt-20 pt-40 justify-start  text-white scrollbar-hide">
+      <div className=" w-full min-h-screen  flex  flex-col bg-[url('../components/image/ab.jpg')]  bg-cover bg-no-repeat items-center gap-4 sm:pt-20 pt-40 justify-start  text-white scrollbar-hide">
 
       <h2 className={` py-1 px-4  rounded-md m-2 ${roomState.joined ? "bg-lime-500 text-black" : "bg-blue-500 text-white"} font-jose `}>
                  {roomState.joined ? "Enjoy Huddle-01" : "Waiting for Participant to Join"}

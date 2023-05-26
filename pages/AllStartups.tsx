@@ -42,7 +42,6 @@ export default function AllStartups() {
   vidHash : ''
  }])
 
-console.log(allStarts);
  const provider = useProvider();
   const { data: signer } = useSigner();
   const { address, isConnected } = useAccount();
@@ -80,7 +79,6 @@ console.log(allStarts);
      
       // getImgVideo(allStarts.owner);
       setAllStarts(myStartupTx);
-      console.log(allStartups);
     } catch (err) {
       console.log(err);
     }
@@ -92,7 +90,7 @@ console.log(allStarts);
   },[])
 
   return (
-   <div className="w-full h-screen flex flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')] bg-cover bg-no-repeat items-center gap-4 pt-24 justify-start text-white scrollbar-hide">
+   <div className="w-full h-screen flex flex-col bg-[url('../components/image/ab.jpg')] bg-cover bg-no-repeat items-center gap-4 pt-24 justify-start text-white scrollbar-hide">
 
   <Head>
     <title>HatcheryDao - Startups</title>
@@ -115,19 +113,19 @@ console.log(allStarts);
               alt="header"
               className="inline-block h-3 w-3"
             />
-            {/* {console.log(itm.ownerAddress)} */}
+            {/* {console.log(itm.amount.toString())} */}
             <span className='text-xs mx-0.5'>({itm.votes})</span> </p>
             <Link
               href={{
                 pathname: "/Expand",
-                query: { name: itm.name, descrip: itm.description, tags: itm.tags, owner: itm.ownerAddress, amt: itm.amt, votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
+                query: { name: itm.name, descrip: itm.description, tags: itm.tagline, owner: itm.ownerAddress, amt: itm.amount.toString(), votes: itm.votes, imgHash: itm.imgHash, vidHash: itm.vidHash },
               }}
               className="rounded-2xl bg-yellow-500 hover:shadow-xl hover:scale-110 hover:shadow-black-600 transition-all duration-200 ease-linear flex items-center justify-center py-1.5 px-3 sm:my-3 my-1 mr-2 sm:ml-auto"
             >
               Expand
             </Link>
           </div>
-          <p className="text-base tracking-widest ml-2 sm:block hidden font-semibold">Tagline :</p>
+          <p className="text-base tracking-widest ml-2 sm:block hidden font-semibold">Tagline :{itm.tagline}</p>
           <div className="text-sm px-2 py-2 w-full overflow-hidden">
             <p className='text-clip h-16 overflow-scroll scrollbar-hide'>
               {itm.tags}

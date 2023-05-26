@@ -299,7 +299,7 @@ function EditPostExport() {
   // ---------------------------------------------------------------------------------
 
   return (
-    <div className="flex items-center justify-center flex-col min-h-screen w-full font-jose bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat sm:pt-20 py-20 sm:pb-44  relative">
+    <div className="flex items-center justify-center flex-col min-h-screen w-full font-jose bg-[url('../components/image/ab.jpg')]  bg-cover bg-no-repeat sm:pt-20 py-20 sm:pb-44  relative">
       <Head>
         <title> Post & Edit Startup</title>
        

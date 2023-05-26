@@ -124,7 +124,7 @@ function ExpandExport() {
 
   return (
     <>
-    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
+    <div className=" w-full min-h-screen overflow-x-hidden flex  flex-col bg-[url('../components/image/ab.jpg')]  bg-cover bg-no-repeat items-start gap-8 pt-20 justify-start  ">
       <ToastContainer />
       <Head>
         <title>HatcheryDao</title>

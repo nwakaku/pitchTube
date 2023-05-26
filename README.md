@@ -77,15 +77,7 @@ The Platform is created using the Next.js framework and the styling is done usin
   
   Various functions like useAccount(), useContract(), useProvider(), useSigner(), useBalance() and many more have been used .
 
-  - **Lighthouse** ------------------------------------------
 
-  Lighthouse is used to to encrypt the file in the data exchange. Before any file is uploaded it is first getting encrypted using the Lighthouse browser encryption and then the hash of the file is getting stored on the smart contract . Users also have to decrypt the file in order to view it.
-
-  [Line 59 ](https:/github.com/nwakaku/pitchTube/blob/main/components/DataExForm.tsx)
-
-  Not only in the Data exchange but it is also used to normal upload the image file on the startup post on the ipfs using the Light house
-
-  [Line 202 ](https:/github.com/nwakaku/pitchTube/blob/main/pages/EditPost.tsx)
 
 ## Challenges I ran into 🏇️
 

@@ -118,7 +118,7 @@ export default function Assets() {
 
 
   return (
-    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1684801365~exp=1684801965~hmac=9a3989fd177b90b440bacd53f399d53d759703290bde5b6466b2d5c67384f17c')] bg-cover bg-no-repeat  overflow-hidden  relative ">
+    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-[url('../components/image/ab.jpg')] bg-cover bg-no-repeat  overflow-hidden  relative ">
      <Head>
         <title>Your Assets - HatcheryDao</title>
          <meta name="description" content="Created with <3 by Wisdom" />
@@ -174,10 +174,10 @@ export default function Assets() {
            
          
           </div>
-          <p className=" text-base tracking-widest ml-2 sm:block hidden font-semibold">Tagline :</p>
+          <p className=" text-white tracking-widest ml-2 sm:block hidden font-semibold">Tagline :</p>
           <div className=" text-sm  px-2  py-2   w-full overflow-hidden ">
-            <p className='text-clip h-16  overflow-scroll scrollbar-hide'>
-              {allStarts[+itm].tags}
+            <p className='text-clip text-white h-16  overflow-scroll scrollbar-hide'>
+              {allStarts[+itm].tagline}
               </p> 
               </div>
           </div>
