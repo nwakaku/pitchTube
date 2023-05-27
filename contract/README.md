@@ -1,26 +1,27 @@
-#  DEPLOYMENT
-#### HatcheryDao contract deployed to : 
+# DEPLOYMENT
+
+#### PitchTube contract deployed to :
+
 - 0x0f384daFF7652FfAf7A75CE8a515aE6e9B599135
-#### Core contract deployed to: 
+
+#### Core contract deployed to:
+
 - 0x01C3993802Fb76cfa1E7cBD8566f25CD79Da844D
+
 #### DataExchange contract deployed to:
+
 - 0x82C50656Ef2De046f89dCB2ABB52Afa577A49029
 
-
 ## Function Checklist
-------- HSBTFactory ----------
-- SetUri (investors and startups)
-- Mint 
-- WhiteListingAddress 
-- Withdraw (from SBT Factory)
-- ChangeOwnership
+
 
 ------- Core ----------
+
 - addStartupsToList
 - addVideoHash
 - editImgLink
 - investAmount
-- changeIntrestRate(from core)
+- changeInterestRate(from core)
 - editName
 - editTagline
 - editDescription
@@ -28,12 +29,6 @@
 - withdrawCore
 - +getterFunctions
 
-------- DataExchange ----------
-- addDataListing
-- buyData
-- changeCommissionIntrestRate
-- withdrawExchangeEarnings
-- +getterFunctions
 
 ### Sample Hardhat Project
 

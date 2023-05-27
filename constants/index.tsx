@@ -1,9 +1,9 @@
-// export const HatcheryDaoAddress = "0x0f384daFF7652FfAf7A75CE8a515aE6e9B599135"
+// export const PitchTubeAddress = "0x0f384daFF7652FfAf7A75CE8a515aE6e9B599135"
 // export const CoreContractAddress = "0x01C3993802Fb76cfa1E7cBD8566f25CD79Da844D"
 // export const ExchangeContractAddress = "0x82C50656Ef2De046f89dCB2ABB52Afa577A49029"
 
 //for theta_testnet
-export const HatcheryDaoAddress = "0x8dc90d8452708E93530E5a2cbB3d4A8B09754432";
+export const PitchTubeAddress = "0x8dc90d8452708E93530E5a2cbB3d4A8B09754432";
 export const CoreContractAddress = "0x5F73A5F39Ac5817F98D3EEea103E1A420e8FB9B5";
 export const ExchangeContractAddress = "0x201cd879D801dD8C98D136B54AdAaf422e1e5cf4";
 
@@ -11,7 +11,7 @@ export const ExchangeContractAddress = "0x201cd879D801dD8C98D136B54AdAaf422e1e5c
 //--------------------------------------------------------------------------------------
 //--------------------------------------------------------------------------------------
 
-export const HatcheryDaoAbi = [
+export const PitchTubeAbi = [
   {
     "inputs": [],
     "stateMutability": "nonpayable",

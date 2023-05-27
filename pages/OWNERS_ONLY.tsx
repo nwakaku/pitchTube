@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { HatcheryDaoAbi, HatcheryDaoAddress } from "../constants";
+import { PitchTubeAbi, PitchTubeAddress } from "../constants";
 import { CoreContractAddress, CoreContractAbi } from "../constants";
 import { ExchangeContractAddress, ExchangeContractAbi } from "../constants";
 
@@ -26,8 +26,8 @@ export default function OWNERS_ONLY() {
   const { address, isConnected } = useAccount();
 
   const sbt = useContract({
-    address: HatcheryDaoAddress,
-    abi: HatcheryDaoAbi,
+    address: PitchTubeAddress,
+    abi: PitchTubeAbi,
     signerOrProvider: signer || provider,
   });
 
@@ -192,7 +192,7 @@ export default function OWNERS_ONLY() {
   }) 
 
   const { data: HatcheryBal } = useBalance({
-    address: HatcheryDaoAddress,
+    address: PitchTubeAddress,
     watch: true,
   });
   const { data: CorBal } = useBalance({
@@ -227,7 +227,7 @@ export default function OWNERS_ONLY() {
     <>
       <div className=" bg-[#100a25] min-h-screen w-full pb-16 flex flex-col items-center justify-center gap-4">
       <Head>
-        <title>HatcheryDao - OwnersOnly</title>
+        <title>PitchTube - OwnersOnly</title>
          <meta name="description" content="Created with <3 by Wisdom" />
           <link rel="icon" href="/hatch.png" />
       </Head>

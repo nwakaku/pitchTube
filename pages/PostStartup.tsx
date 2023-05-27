@@ -30,7 +30,7 @@ const livepeerClient = createReactClient({
     apiKey: getKeys() as string,
   }),
 });
-import { HatcheryDaoAbi, HatcheryDaoAddress } from "../constants";
+import { PitchTubeAbi, PitchTubeAddress } from "../constants";
 import Head from "next/head";
 
 export default function PostStartup() {
@@ -69,8 +69,8 @@ function PostStartupExport() {
   
 
   const sbt = useContract({
-    address: HatcheryDaoAddress,
-    abi: HatcheryDaoAbi,
+    address: PitchTubeAddress,
+    abi: PitchTubeAbi,
     signerOrProvider: signer || provider,
   });
 

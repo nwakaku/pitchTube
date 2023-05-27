@@ -1,13 +1,11 @@
-
-const {ethers} = require("hardhat");
+const { ethers } = require("hardhat");
 
 async function main() {
-
   // deployment of HSbT contract
-//  const HSBTFactoryContractFactory = await ethers.getContractFactory("HatcherySBT");
-//  const HSBTFactoryContract = await HSBTFactoryContractFactory.deploy();
-//  await HSBTFactoryContract.deployed();
-//  console.log("HatcheryDao contract deployed to:", HSBTFactoryContract.address);
+  //  const HSBTFactoryContractFactory = await ethers.getContractFactory("HatcherySBT");
+  //  const HSBTFactoryContract = await HSBTFactoryContractFactory.deploy();
+  //  await HSBTFactoryContract.deployed();
+  //  console.log("PitchTube contract deployed to:", HSBTFactoryContract.address);
   // deployment of Core contract
   const HSBTFactoryContract = "0x8dc90d8452708E93530E5a2cbB3d4A8B09754432";
   const CoreContractFactory = await ethers.getContractFactory("Core");
@@ -16,10 +14,17 @@ async function main() {
   console.log("Core contract deployed to:", CoreContract.address);
 
   //Deployment of DataExchange Contract
-  const DataExchangeContractFactory = await ethers.getContractFactory("Exchange");
-  const DataExchangeContract = await DataExchangeContractFactory.deploy(HSBTFactoryContract);
+  const DataExchangeContractFactory = await ethers.getContractFactory(
+    "Exchange"
+  );
+  const DataExchangeContract = await DataExchangeContractFactory.deploy(
+    HSBTFactoryContract
+  );
   await DataExchangeContract.deployed();
-  console.log("DataExchange contract deployed to:", DataExchangeContract.address);
+  console.log(
+    "DataExchange contract deployed to:",
+    DataExchangeContract.address
+  );
 }
 
 /*

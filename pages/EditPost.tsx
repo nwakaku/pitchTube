@@ -1,4 +1,4 @@
-import { CoreContractAddress, CoreContractAbi, HatcheryDaoAddress, HatcheryDaoAbi } from "../constants";
+import { CoreContractAddress, CoreContractAbi, PitchTubeAddress, PitchTubeAbi } from "../constants";
 import {
   useAccount,
   useContract,
@@ -105,17 +105,17 @@ function EditPostExport() {
   });
 
   const sbt = useContract({
-    address: HatcheryDaoAddress,
-    abi: HatcheryDaoAbi,
+    address: PitchTubeAddress,
+    abi: PitchTubeAbi,
     signerOrProvider: signer || provider,
   });
   
-  async function bbb() {
-    try {
-    } catch (err) {
-      console.log(err);
-    }
-  }
+  // async function bbb() {
+  //   try {
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // }
 
   // console.log(process.env.NEXT_PUBLIC_LIGHTHOUSE);
   async function editNameTx(val: string) {
