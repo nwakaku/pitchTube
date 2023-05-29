@@ -93,7 +93,7 @@ export default function AllStartups() {
   },[])
 
   return (
-   <div className="w-full h-screen flex flex-col bg-image bg-cover bg-no-repeat items-center gap-4 pt-24 justify-start text-white scrollbar-hide">
+   <div className="w-full h-screen flex flex-col bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1685136098~exp=1685136698~hmac=01f8faa6df82635ce74acf9cc74bdb04394c5a89784a3a6497b73e58e4e7ea9e')] bg-cover bg-no-repeat items-center gap-4 pt-24 justify-start text-white scrollbar-hide">
 
   <Head>
     <title>PitchTube - Startups</title>
