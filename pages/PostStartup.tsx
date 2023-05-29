@@ -75,19 +75,19 @@ function PostStartupExport() {
   });
 
   const [myStartup, setMyStartup] = useState<IStartups>({
-    name: "XXXXXX_XXXXX",
-    tag: "xxxxxxxxxxxXxXXXXxxxxxx XXXX xxxxxxxx XXXX",
-    desc: "xxxxxxxxxxxXxXXXXxxxxxx XXXX xxxxxxxx XXXX xxxxx yyyyy zzzzz aaa cccc ddddd ssss www www mmmmm fffff  jjjj hhhhh hhhh dddd  kkkkk gggggg lllllll  CREATED BY @shikkhar_",
-    amt: "XXX XXX",
-    // img : "initial_img.jpg",
+    name: "Name Of StartUp",
+    tag: "TagLine Of StartUp",
+    desc: " Full Description Of StartUp",
+    amt: "Amount Needed",
+    // img : "startUp.jpg",
     // video : "b66bkq9unt44br5k"
   });
 
-  const img = useRef("initial_img.jpg");
+  const img = useRef("startUp.jpg");
   const video = useRef("aaf8n564dj8nwh19");
 
   const [ imgVid , setImgVid] = useState<IvidImg>({
-    img : "img/initial_img.jpg",
+    img : "img/startUp.jpg",
     vid : "aaf8n564dj8nwh19"
   })
 
@@ -95,8 +95,8 @@ function PostStartupExport() {
     try {
       const imgTx = await core?.getImageLink(address);
       console.log(imgTx);
-      // imgTx === "initial_img"
-      //   ? img.current = "initial_img.jpg"
+      // imgTx === "startUp"
+      //   ? img.current = "startUp.jpg"
       //   : img.current = `https://ipfs.io/ipfs/${imgTx}`;
       
       const vidTx = await core?.getVideoHash(address)
@@ -104,7 +104,7 @@ function PostStartupExport() {
       // video.current = (vidTx && vidTx !== "NOT_UPLOADED_YET") ? vidTx : "aaf8n564dj8nwh19"
 
       setImgVid({
-        img : imgTx === "initial_img" ? "img/initial_img.jpg" : `https://ipfs.io/ipfs/${imgTx}`,
+        img : imgTx === "startUp" ? "img/startUp.jpg" : `https://ipfs.io/ipfs/${imgTx}`,
         vid : vidTx === "NOT_UPLOADED_YET" ? "aaf8n564dj8nwh19" : vidTx
       })
 
@@ -157,7 +157,7 @@ function PostStartupExport() {
           <link rel="icon" href="/hatch.png" />
       </Head>
       <ToastContainer />
-      <div className="flex flex-wrap gap-2 ml-16">
+      <div className="flex justify-content-center flex-wrap gap-2 ml-16">
         <Link
           href={{
             pathname: "/EditPost",

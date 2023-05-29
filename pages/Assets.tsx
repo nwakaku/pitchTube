@@ -101,7 +101,7 @@ export default function Assets() {
 
 
   return (
-    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-[url('https://img.freepik.com/free-vector/abstract-background-design-emerald-green_53876-43540.jpg?w=1800&t=st=1685136098~exp=1685136698~hmac=01f8faa6df82635ce74acf9cc74bdb04394c5a89784a3a6497b73e58e4e7ea9e')] bg-cover bg-no-repeat  overflow-hidden  relative ">
+    <div className="w-full min-h-screen overflow-x-hidden sm:pt-28 md:pt-24 pt-40   bg-image bg-cover bg-no-repeat  overflow-hidden  relative ">
      <Head>
         <title>Your Assets - PitchTube</title>
          <meta name="description" content="Created with <3 by Wisdom" />

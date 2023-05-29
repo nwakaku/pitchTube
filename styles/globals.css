@@ -3,3 +3,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+    background-image: url('../components/image/ab.jpg');
+    background-size: cover;
+    /* Adjust the sizing as per your requirement */
+    background-position: center;
+    /* Adjust the positioning as per your requirement */
+}
