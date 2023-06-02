@@ -101,7 +101,7 @@ export default function AllStartups() {
     <link rel="icon" href="/hatch.png" />
   </Head>
 
-<div className="w-full h-screen overflow-scroll overflow-x-hidden scrollbar-hide grid-cols-1 grid auto-rows-max content-start justify-center gap-4">
+<div className="w-full h-screen fonty overflow-scroll overflow-x-hidden scrollbar-hide grid-cols-1 grid auto-rows-max content-start justify-center gap-4">
 {allStarts.map((itm: any, idx: number) => (
 <div key={idx} className="md:w-2/4 sm:w-2/3 w-4/5 mx-auto h-40 pb-3 bg-gray-500 transition-all duration-300 ease-linear backdrop-blur-md flex items-start justify-start rounded-xl font-jose overflow-hidden">
 <div className="relative h-40 w-48">
