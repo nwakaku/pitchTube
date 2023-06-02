@@ -19,7 +19,7 @@ const Homepage=()=> {
    }, []);
   return (
     <>
-      <section className="bg-[#100a25] dark:bg-[#100a25] fonty">
+      <section className="bg-[#100a25] dark:bg-[url(https://awesomescreenshot.s3.amazonaws.com/image/3743367/40400571-0b9d940d93924b22e8cb868e57b17196.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230602T081536Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4d5ac39743377e227184cf3a4bc9fa1c5c26aaec0a4d946a2a43af4ec636e91)] fonty">
         <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
           <div className="mr-auto place-self-center lg:col-span-6">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
@@ -51,7 +51,7 @@ const Homepage=()=> {
       {/* /* ssection two */ }
       <section className=" w-full flex flex-col items-center justify-start bg-[#100a25] dark:bg-[#100a25]">
 
-        <span className="text-white">TECH STACK</span>
+        <span className="text-white p-3 fonty">TECH STACK</span>
         
         <div className="grid sm:grid-cols-6 grid-cols-3 auto-cols-max items-center  ">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Theta_logo.png" alt="img" className=" sm:p-12 p-6" />
@@ -248,7 +248,7 @@ const Homepage=()=> {
       
 
      
-      <div className="fonty bg-[#100a25] dark:bg-[#100a25] text-white">
+      <div className="fonty bg-[url(https://awesomescreenshot.s3.amazonaws.com/image/3743367/40400571-0b9d940d93924b22e8cb868e57b17196.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJSCJQ2NM3XLFPVKA%2F20230602%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230602T081536Z&X-Amz-Expires=28800&X-Amz-SignedHeaders=host&X-Amz-Signature=e4d5ac39743377e227184cf3a4bc9fa1c5c26aaec0a4d946a2a43af4ec636e91)] dark:bg-[#100a25] text-white">
         <div className="mx-auto w-full flex flex-col items-center justify-center  ">
           <p className="sm:text-6xl text-3xl  text-center my-4 mb-8  font-jose mt-12 ">
             So what you are waiting for ?
