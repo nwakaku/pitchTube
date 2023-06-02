@@ -113,7 +113,7 @@ className="object-cover h-full w-full"
 </div> 
 <div className="flex flex-col flex-grow">
 <div className="w-full flex sm:flex-row flex-col mt-3 sm:mt-0 items-center justify-start">
-<p className="text-white font-semibold pl-2 mr-2 text-md sm:text-2xl">
+<p className="text-[#100a25] font-semibold pl-2 mr-2 text-md sm:text-2xl">
   {itm.name}
   <img src="img/star.png" alt="header" className="inline-block h-3 w-3" />
   <span className="text-xs mx-0.5">({itm.votes})</span>
