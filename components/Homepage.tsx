@@ -19,9 +19,9 @@ const Homepage=()=> {
    }, []);
   return (
     <>
-      <section className="bg-[#100a25] dark:bg-[#100a25]">
+      <section className="bg-[#100a25] dark:bg-[#100a25] fonty">
         <div className="grid max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-          <div className="mr-auto place-self-center lg:col-span-7">
+          <div className="mr-auto place-self-center lg:col-span-6">
             <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none tracking-tight md:text-5xl xl:text-6xl dark:text-white">
               Empowering Startups <br /> with Opportunities
             </h1>
@@ -37,10 +37,10 @@ const Homepage=()=> {
               </a>
             </div>
           </div>
-          <div className="hidden lg:mt-0 lg:col-span-5 lg:flex">
+          <div className="hidden lg:mt-0 lg:col-span-6 lg:flex">
             <img
               src={
-                "https://img.freepik.com/premium-vector/financial-profit-investment-concept_1016-1322.jpg?w=740"
+                "https://astrolus-premium.netlify.app/images/hero-dark.webp"
               }
               alt="hero image"
             />
@@ -48,41 +48,18 @@ const Homepage=()=> {
         </div>
       </section>
 
-      <section className=" w-full flex flex-col items-center justify-start   bg-white ">
+      {/* /* ssection two */ }
+      <section className=" w-full flex flex-col items-center justify-start bg-[#100a25] dark:bg-[#100a25]">
+
+        <span className="text-white">TECH STACK</span>
         
-        <div className="grid sm:grid-cols-4 grid-cols-3 auto-cols-max items-center  ">
+        <div className="grid sm:grid-cols-6 grid-cols-3 auto-cols-max items-center  ">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Theta_logo.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/huddle.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/livepeer.png" alt="img" className=" sm:p-12 p-6" />
           <img src="/img/lighthouse.jpg" alt="img" className=" sm:p-12 p-6" />
-        </div>
-
-        <p className="mt-8 sm:text-4xl text-3xl font-semibold font-jose text-[#070a14]">
-          Who is this for ?
-        </p>
-          <div className="flex sm:flex-row flex-col items-center justify-around w-full sm:w-3/4 gap-4">
-          <p className=" font-jose sm:text-xl text-xs p-8 text-center sm:w-2/5 w-9/12">
-            The Startups that are looking for initial funding can post about
-            their startus here , they will be able to do the basic{" "}
-            <b>CRUD operations</b> on few things.
-          </p>
-          <img
-            src="https://inc42.com/wp-content/uploads/2022/03/pepper-diff-stages-of-startup-ft-1024x768.jpg"
-            alt="img"
-            className="w-9/12 sm:w-4/12 p-8 rounded-full"
-          />
-        </div>
-        <div className="flex sm:flex-row flex-col items-center justify-around w-full sm:w-3/4 mb-12 gap-4">
-          <img
-            src="https://st3.depositphotos.com/3382541/15072/v/600/depositphotos_150728272-stock-illustration-flat-young-smiley-investors.jpg"
-            alt="img"
-            className="w-9/12 sm:w-4/12 p-8 rounded-full"
-          />
-          <p className=" font-jose sm:text-xl text-2xl p-8 text-center sm:w-2/5 w-9/12">
-            The Investors who are looking for early age startups to{" "}
-            <b>invest</b> and want to acquire profit in long terms. They will be
-            able to Invest.
-          </p>
+          <img src="https://cdn.hashnode.com/res/hashnode/image/upload/v1651122498709/FQjch0sgd.png" alt="img" className=" sm:p-12 p-6" />
+          <img src="https://d4.alternativeto.net/uaUADPLN5QTqRHNl0qujQbTXzm5wjsAq5K9Y-ylGjdQ/rs:fill:280:280:0/g:ce:0:0/YWJzOi8vZGlzdC9pY29ucy90YWlsd2luZC1jc3NfMTM2NjE5LnBuZw.png" alt="img" className=" sm:p-12 p-6" />
         </div>
        
        { /* <some> </some> */}
@@ -162,7 +139,7 @@ const Homepage=()=> {
             </div>
             <img
               className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-              src="https://img.freepik.com/free-vector/illustration-financial-concept_53876-20606.jpg?w=826&t=st=1683797087~exp=1683797687~hmac=3a16a15729d8bc7c46b9f1bc6f4908ec19a9fe2bef4300a5f1ee382a97a8e83c"
+              src="https://ampire.netlify.app/images/stats-login.webp"
               alt="dashboard feature image"
             />
           </div>
@@ -170,7 +147,7 @@ const Homepage=()=> {
           <div className="items-center gap-8 lg:grid lg:grid-cols-2 xl:gap-16">
             <img
               className="hidden w-full mb-4 rounded-lg lg:mb-0 lg:flex"
-              src="https://img.freepik.com/free-vector/transfer-money-concept-illustration_114360-3762.jpg?w=740&t=st=1683797334~exp=1683797934~hmac=b6aa491fbeb186ea42db21d32f327e692bd0302adf3537329bda76b4efe03e5d"
+              src="https://preview.cruip.com/fintech/images/features-04.png"
               alt="feature image 2"
             />
             <div className="text-gray-500 sm:text-lg dark:text-gray-400">
@@ -266,11 +243,14 @@ const Homepage=()=> {
       </section>
 
       
+      
+
+      
 
      
-      <div>
+      <div className="fonty bg-[#100a25] dark:bg-[#100a25] text-white">
         <div className="mx-auto w-full flex flex-col items-center justify-center  ">
-          <p className="sm:text-6xl text-3xl text-center my-4 mb-8  font-jose mt-12 ">
+          <p className="sm:text-6xl text-3xl  text-center my-4 mb-8  font-jose mt-12 ">
             So what you are waiting for ?
           </p>
           <p className="sm:text-5xl text-2xl text-center my-4 mb-8  font-vt mt-12 ">
@@ -283,15 +263,15 @@ const Homepage=()=> {
           
           <Link
             href={"/BuyNFT"}
-            className="mx-auto z-10 font-vt text-6xl bg-[#50C878] text-[#ffffff] rounded-3xl shadow-green-100 shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear"
+            className="mx-auto z-10 font-vt text-6xl bg-blue-500 text-[#ffffff] rounded-3xl shadow-blue-100 shadow-xl py-2 px-8 hover:scale-110 transition-all duration-200 ease-linear"
           >
             Buy Now
           </Link>
         </div>
         <img src="img/arr2.png" alt="img" width={250} className="ml-48" />{" "}
       </div>
-      <footer>
-        <div className="bg-[#04040f] text-white grid grid-cols-2 w-full">
+      <footer className="fonty">
+        <div className="bg-[#100a25] text-white grid grid-cols-2 w-full">
           <div className="flex flex-col items-start p-4 justify-start">
             <p className="text-xl">PitchTube</p>
             <p className="text-sm">

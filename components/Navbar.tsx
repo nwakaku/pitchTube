@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
 
-    <nav className="z-50 w-full bg-[#070a14] p-0 text-white font-body text-xl flex items-start justify-between transition-all duration-300 ease-linear fixed top-0">
+    <nav className="z-50 fonty w-full bg-[#100a25] p-0 text-white font-body text-xl flex items-start justify-between transition-all duration-300 ease-linear fixed top-0">
 
       <div className="z-80 sm:w-72 cursor-pointer flex items-center mt-3 px-3 justify-center rounded-md">
        <Link href="/">
