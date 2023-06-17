@@ -1,9 +1,5 @@
-
-[Website's LINK](https://pitch-tube.vercel.app/)
-
-[Youtube's LINK](https://youtu.be/BLiCtM5fUBs)
-
 # PitchTube
+
 
 PitchTube is an innovative startup incubator platform that operates on the concept of NFT (Non-Fungible Tokens). It aims to support and promote startups by providing them with a unique opportunity to raise funding through video pitches. By utilizing the power of NFTs, PitchTube offers a novel approach to attract potential investors and showcase the potential of budding businesses.
 
